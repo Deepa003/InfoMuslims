@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/toolbar_color"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/home"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="HOME"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/img_menu_bar"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/menu"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/homescreen">
+
+    <RelativeLayout
+        android:id="@+id/rl_firstTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="32dp"
+        android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:id="@+id/img_quran"
+        android:layout_width="90dp"
+        android:layout_height="85dp"
+        android:background="@drawable/quran_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_quran"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:text="@string/quran"
+            android:textColor="@color/tabs_title_color"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/img_names"
+        android:layout_width="90dp"
+        android:layout_height="85dp"
+        android:background="@drawable/names_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/names"
+            android:textColor="@color/tabs_title_color"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_below="@id/img_names"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_secondTab"
+        android:layout_below="@+id/rl_firstTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="32dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/img_holiday"
+            android:layout_width="90dp"
+            android:layout_height="85dp"
+            android:background="@drawable/holiday_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/muslim_hoiday"
+            android:textColor="@color/tabs_title_color"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_below="@id/img_holiday"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/img_dua"
+            android:layout_width="90dp"
+            android:layout_height="85dp"
+            android:background="@drawable/dailydua"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dailydua"
+            android:textColor="@color/tabs_title_color"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_below="@id/img_dua"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_thirdTab"
+        android:layout_below="@+id/rl_secondTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="32dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/img_tasbih"
+            android:layout_width="90dp"
+            android:layout_height="85dp"
+            android:background="@drawable/tasbih_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tasbih"
+            android:textColor="@color/tabs_title_color"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_below="@id/img_tasbih"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"/>
+
+
+        <ImageView
+            android:id="@+id/img_duaRequest"
+            android:layout_width="90dp"
+            android:layout_height="85dp"
+            android:background="@drawable/duarequest_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dua_request"
+            android:textColor="@color/tabs_title_color"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_below="@id/img_duaRequest"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/home_adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

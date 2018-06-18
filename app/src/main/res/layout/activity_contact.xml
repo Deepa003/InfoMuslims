@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_contact"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/toolbar_color"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/img_contact_back"
+            android:layout_width="22dp"
+            android:layout_height="28dp"
+            android:background="@drawable/leftarrow"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Contact Us"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_contact">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/contact_background"/>
+
+        <TextView
+            android:id="@+id/tv_mail"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/img"
+            android:background="@color/toolbar_color"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="infomuslimsapp@gmail.com"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/message"
+            android:layout_marginRight="53dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="53dp"
+            android:layout_below="@+id/img"
+            android:layout_toLeftOf="@+id/tv_feedback"
+            android:layout_toStartOf="@+id/tv_feedback"
+            android:foregroundGravity="center"/>
+
+        <ImageView
+            android:id="@+id/img_feedback"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_mail"
+            android:background="@drawable/feedback"
+            />
+
+        <TextView
+            android:id="@+id/tv_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img_feedback"
+            android:layout_marginTop="5dp"
+            android:text="FeedBack"
+            android:textColor="@color/title_color"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_contactname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_feedback"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:hint="Name"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/title_color"
+            android:textSize="15dp"/>
+
+        <View
+            android:id="@+id/viewContact1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/toolbar_color"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_contactname"/>
+
+        <EditText
+            android:id="@+id/et_contactsummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewContact1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@null"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="Summary"
+            android:textColor="@color/title_color"
+            android:textSize="15dp"/>
+
+        <View
+            android:id="@+id/viewContact3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/toolbar_color"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/et_contactsummary"/>
+
+        <Button
+            android:id="@+id/btn_submit_mail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/viewContact3"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginRight="47dp"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:text="Send Mail"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_cover"/>
+    </RelativeLayout>
+</RelativeLayout>

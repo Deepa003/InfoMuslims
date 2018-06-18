@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_tasbih"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/toolbar_color"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/img_tasbih_back"
+            android:layout_width="22dp"
+            android:layout_height="28dp"
+            android:background="@drawable/leftarrow"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Tasbih"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_tasbih"
+        android:background="#195551">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/halfscreenimg"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tasbih_background"
+        android:layout_below="@+id/rl_img">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:id="@+id/rl_buttons">
+
+        <TextView
+            android:id="@+id/tv_reset"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/count_img"
+            android:layout_marginTop="25dp"
+            android:text="Reset"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@color/title_color"
+            android:drawableTop="@drawable/refresh"
+            android:paddingTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/count_img"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_reset"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="0/33\n\n Count"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/title_color"
+            />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/count_img"
+            android:layout_toRightOf="@+id/tv_count"
+            android:text="0\n\nTotal"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@color/title_color"
+            />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_press"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/rl_buttons"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="45dp"
+            android:text="PRESS"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:background="@drawable/press"
+            />
+
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/tasbih_adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

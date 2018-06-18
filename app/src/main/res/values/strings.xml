@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">InfoMuslims</string>
+    <string name="quran">Quran</string>
+    <string name="names">99 Names</string>
+    <string name="muslim_hoiday">Muslim Holiday</string>
+    <string name="dailydua">Daily Dua</string>
+    <string name="tasbih">Tasbih</string>
+    <string name="dua_request">Dua Request</string>
+
+
+    <string name="internet_error">No Internet Connection</string>
+
+
+    <!--app id's-->
+
+    <string name="banner_home_footer">ca-app-pub-4745101487420076/3501041524</string>
+    <string name="interstitial_full_screen">ca-app-pub-4745101487420076/7369162017</string>
+
+</resources>
